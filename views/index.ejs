@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+   <div id="preloader"></div>
+
+    <div id="cursor"></div>
+
+  <div id="main">
+
+
+
+    <section id="header">
+        <h1>Yummy<span>🔴</span></h1>
+        <div id="navbar">
+            <a href="#" class="active home">Home</a>
+            <a href="#about" class="about">About</a>
+            <a href="#menu" class="menu">Menu</a>
+            <a href="#events" class="events">Events</a>
+            <a href="#chefs " class=" chefs">Chefs</a>
+            <a href="#gallery" class="gallery">Gallery</a>
+            <span href="#" style="display: none;" >Drop Down <i class="fa-solid fa-chevron-down drop-down" ></i>
+                <div id="method" >
+                    <li href="#">Drop Down 1</li>
+                    <li href="#">Drop Down 2</li>
+                    <li href="#">Drop Deep Down 3 <i onclick="dropLeft()" class="fa-solid fa-chevron-down"></i></li>
+                    <li href="#">Drop Down 4</li>
+                    <li href="#">Drop Down 5</li>
+                    <li href="#">Drop Down 6</li>
+                    <div id="method-2" >
+                        <li href="#">Drop Down 1</li>
+                        <li href="#">Drop Down 2</li>
+                        <li href="#">Drop Down 3 </li>
+                        <li href="#">Drop Down 4</li>
+                        <li href="#">Drop Down 5</li>
+                        <li href="#">Drop Down 6</li>
+                    </div>
+                </div>
+                </span>
+            <a href="#contact" class="contact">Contact</a>
+            <i id="xbar" class="fa-solid fa-xmark"></i>
+
+        </div>
+        
+        <div>
+       <a href="#booktable"><button class="color-btn">Book a Table</button></a>
+        <i id="homeBar" class="fa-solid fa-bars"></i></a>
+    </div>
+    </section>
+
+    <!-- <%- include('includes/alert.ejs') %> -->
+
+
+    <section id="home" class="section-p1 position-relativ" data-aos="fade-up"  >
+        
+        <div   data-aos="fade-up" class="home-details">
+            <h1>Enjoy Your Healthy Delicious Food</h1>
+            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <div  data-aos="fade-up">
+                <button class="color-btn">Book a Table</button>
+                <a href="https://youtu.be/LXb3EKWsInQ" class="white-btn"><i class="fa-sharp fa-regular fa-circle-play"></i> Watch Video</a>
+               
+            </div>
+        </div>
+        <div class="home-img" data-aos="zoom-out">
+            <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/hero-img.png">
+        </div>
+    </section>
+
+
+    <section id="about" class="section-p1">
+        <span data-aos="fade-up"  >About us</span>
+        <h2 data-aos="fade-up"  >Learn More <span>About Us</span></h2>
+        <div  id="about-all">
+            <div class="about-img" data-aos="fade-up"  >
+                <div class="about-contact">
+                    <h3>Book a Table</h3>
+                    <span>+1 5589 55488 55</span>
+                </div>
+            </div>
+            <div class="about-details" data-aos="fade-up"  >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div>
+                    <li>
+                        <i class="fa-solid fa-check-double icon"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-double icon"></i>Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check-double icon"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                    </li>
+                </div>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/about-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <div id="about-blog" class="section-p1">
+        <div class="big-box" data-aos="fade-up"  >
+            <h3>Why Choose Yummy?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            <div>
+            <button>learn more</button>
+        </div>
+        </div>
+        <div class="small-box" data-aos="fade-up"  >
+            <i class="fa-solid fa-clipboard"></i>
+            <h4>Corporis voluptates officia eiusmod</h4>
+            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+        <div class="small-box" data-aos="fade-up"  >
+            <i class="fa-solid fa-gem"></i>
+            <h4>Ullamco laboris ladore pan</h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+        <div class="small-box" data-aos="fade-up"  >
+            <i class="fa-solid fa-inbox"></i>
+            <h4>Labore consequatur incidid dolore</h4>
+            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+        </div>
+    </div>
+
+    <div id="about-banner" data-aos="fade-up"  >
+        <div class="overlay">
+            <div>
+                <h2 class="counter-numbers" data-count="232">0</h2>
+                <p>clients</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers"  data-count="521">0</h2>
+                <p>Projects</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers"  data-count="1453"="">0</h2>
+                <p>Hours Of Support</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers"  data-count="100"="">0</h2>
+                <p>Workers</p>
+            </div>  
+        </div>
+    </div>
+
+    <section id="menu" class="section-p1">
+        <span data-aos="fade-up" >OUR MENU</span>
+        <h2 data-aos="fade-up"  >Check Our <span>Yummy Menu</span></h2>
+        <div id="menu-box">
+            <div class="menu-scoller" data-aos="fade-up">
+                <a  class="active">Startes</a>
+                <a >Breakfast</a>
+                <a >Lunch</a>
+                <a >Dinner</a>
+            </div>
+            <span data-aos="fade-up"  >MENU</span>
+            <h3 data-aos="fade-up" id="menu-header" >Starters</h3>
+            <div class="menu-dish-box" data-aos="fade-up"  >
+                <div class="menu-dish" data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-1.png" alt="">
+                    <h4>Magnam Tiste</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$5.95</h5>
+                </div>
+                <div class="menu-dish" data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-2.png" alt="">
+                    <h4>Aut Luia</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$14.95</h5>
+                </div>
+                <div class="menu-dish" data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-3.png" alt="">
+                    <h4>Est Eligendi</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$8.95</h5>
+                </div>
+                <div class="menu-dish"data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-4.png" alt="">
+                    <h4>Eos Luibusdam</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$12.95</h5>
+                </div>
+                <div class="menu-dish"data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-5.png" alt="">
+                    <h4>Eos Luibusdam</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$12.95</h5>
+                </div>
+                <div class="menu-dish" data-aos="fade-up"  >
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/menu/menu-item-6.png" alt="">
+                    <h4>Laboriosam Direva</h4>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <h5>$9.95</h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="slide-box" class="section-p1"    >
+        <span data-aos="fade-up">TESTIMONIALS</span>
+        <h2 data-aos="fade-up">What Are They <span>Saying About Us</span></h2>
+        <div class="slider" data-aos="fade-up">
+            <div class="slides section-p1">
+                <div class="slide-details">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ea omnis vero quia tempora repellat provident ullam cupiditate iste obcaecati esse, quae asperiores, deserunt, debitis odio ducimus natus? Illum fugit praesentium quasi atque rem, obcaecati fuga nulla id debitis et!</p>
+                    <h4>Saul Goodman</h4>
+                    <p>Ceo & Founder</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="slides section-p1"  >
+                <div class="slide-details">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ea omnis vero quia tempora repellat provident ullam cupiditate iste obcaecati esse, quae asperiores, deserunt, debitis odio ducimus natus? Illum fugit praesentium quasi atque rem, obcaecati fuga nulla id debitis et!</p>
+                    <h4>Sara Wilsson</h4>
+                    <p>Designer</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="slides section-p1" >
+                <div class="slide-details">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ea omnis vero quia tempora repellat provident ullam cupiditate iste obcaecati esse, quae asperiores, deserunt, debitis odio ducimus natus? Illum fugit praesentium quasi atque rem, obcaecati fuga nulla id debitis et!</p>
+                    <h4>Jena Karlis</h4>
+                    <p>Store Owner</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="slides section-p1"   >
+                <div class="slide-details">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ea omnis vero quia tempora repellat provident ullam cupiditate iste obcaecati esse, quae asperiores, deserunt, debitis odio ducimus natus? Illum fugit praesentium quasi atque rem, obcaecati fuga nulla id debitis et!</p>
+                    <h4>John Larson</h4>
+                    <p>Entrepreneur</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="slide-img">
+                    <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/testimonials/testimonials-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="bar" >
+            <div class="active"></div>
+            <div ></div>
+            <div ></div>
+            <div"></div>
+        </div>
+
+    </div>
+
+    <section id="events"
+        <span data-aos="fade-up"  >EVENTS</span>
+        <h2 data-aos="fade-up"  >Share <span>Your Moments</span> In Our Restaurant</h2>
+        <div id="event-box">
+                <div class="event-slide" data-aos="fade-up"  >
+                    <div class=" event-overlay">
+                    <h3>Private Party</h3>
+                    <h4>$289</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur, veniam praesentium corrupti, ea quod porro odio vel doloremque eaque nesciunt delectus suscipit tenetur at unde repellat eos sed? Eum excepturi sapiente laboriosam alias dolor nobis recusandae deleniti dolorem quas?
+                    </p>
+                </div>
+                </div>
+                <div class="event-slide" data-aos="fade-up"  >
+                    <div class=" event-overlay">
+                    <h3>Private Party</h3>
+                    <h4>$289</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur, veniam praesentium corrupti, ea quod porro odio vel doloremque eaque nesciunt delectus suscipit tenetur at unde repellat eos sed? Eum excepturi sapiente laboriosam alias dolor nobis recusandae deleniti dolorem quas?
+                    </p>
+                </div>
+                </div>
+                <div class="event-slide" data-aos="fade-up"  >
+                    <div class=" event-overlay">
+                    <h3>Private Party</h3>
+                    <h4>$289</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur, veniam praesentium corrupti, ea quod porro odio vel doloremque eaque nesciunt delectus suscipit tenetur at unde repellat eos sed? Eum excepturi sapiente laboriosam alias dolor nobis recusandae deleniti dolorem quas?
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+        <div id="event-bar">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+           </div>
+    </section>
+
+    <section id="chefs" class="section-p1">
+        <span data-aos="fade-up"  >CHEFS</span>
+        <h2 data-aos="fade-up"  >Our <span>Proffesional</span> Chefs</h2>
+        <div class="chef-box">
+            <div class="chef-intro"  data-aos="fade-up"  >
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-1.jpg"z alt="">
+            <div class="chef-details">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+            </div>
+
+            <div class="chef-follow" data-aos="fade-left">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+        
+        <div class="chef-intro"  data-aos="fade-up"  >
+            <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-2.jpg"z alt="">
+        <div class="chef-details">
+            <h4>Sarah Jhonson</h4>
+            <span>Patissier</span>
+            <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+        </div>
+        
+        <div class="chef-follow" data-aos="fade-left">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+
+
+        
+
+    <div class="chef-intro"  data-aos="fade-up" >
+        <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/chefs/chefs-3.jpg"z alt="">
+    <div class="chef-details">
+        <h4>William Anderson</h4>
+        <span>Cook</span>
+        <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+    </div>
+    <div class="chef-follow" data-aos="fade-left">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</div>
+
+</div>
+    </section>
+
+
+    <div id="booktable" class="section-p1">
+        <span data-aos="fade-up">BOOK A TABLE</span>
+        <h2 data-aos="fade-up">Book <span>Your Stay</span> With Us</h2>
+        <div class="book-box">
+            <div class="book-img" data-aos="fade-up zoom-out" >
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/reservation.jpg" alt="">
+            </div>
+            
+            <form action="/booking" method="post" data-aos="fade-up">
+                <input type="text" name="bookName" placeholder="Your Name" required>
+                <input type="text" name="bookEmail" placeholder="Your E-mail"required>
+                <input type="text" name="bookPhone" placeholder="Your Phone" required>
+                <input type="date" name="bookDate" placeholder="Date" required>
+                <input type="time" name="bookTime" placeholder="Time" required>
+                <input type="number" name="bookPeople" min="1" max="10"  placeholder="# of people" required>
+                <textarea cols="30" name="bookMessage" rows="10" placeholder="Message" required></textarea>
+                <div>
+                    <button class="color-btn" type="submit">Book A Table</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="gallery" class="section-p1">
+        <span data-aos="fade-up">GALLERY</span>
+        <h2 data-aos="fade-up">Check <span>Our Gallery</span></h2>
+        <div class="gallery-slider" data-aos="fade-up">
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-1.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-2.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-3.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-4.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-5.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-6.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-7.jpg" alt="">
+            </div>
+            <div class="gallery-slide">
+                <img src="https://bootstrapmade.com/demo/templates/Yummy/assets/img/gallery/gallery-8.jpg" alt="">
+            </div>
+        </div>
+        <div id="gallery-bar">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-p1">
+        <span data-aos="fade-up">CONTACT</span>
+        <h2 data-aos="fade-up">Need Help? <span> Contact Us</span></h2>
+        <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13774.481384897534!2d77.99871729859699!3d30.333315016750777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092a047c542e61%3A0x7666d0e7bc9d2b22!2sBallupur%2C%20Dehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1687067770730!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-details">
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-map"></i>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>contact@example.com</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+            </div>
+            <div data-aos="fade-up">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3>Opening Hours</h3>
+                <p><span>Mon-Sat:</span> 11AM - 23PM; <span>Sunday: </span> Closed</p>
+            </div>
+        </div>
+
+        <form action="/contact" method="post"  data-aos="fade-up">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+            <input type="text" name="subject" class="subject" placeholder="Subject" required>
+            <textarea id="message" cols="30" rows="10" name="message"  placeholder="Message" required></textarea>
+            <div>
+            <button class="color-btn" type="submit">Send A Message</button>
+        </div>
+        </form>
+    </section>
+
+
+    <footer data-aos="fade-up" >
+        <div class="upper-footer" >
+            <div>
+                <i class="fa-solid fa-location-dot fa-icon"></i>
+                <h3>Address</h3>
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022 - US</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone fa-icon"></i>
+                <h3>Reservations</h3>
+                <p>Phone: +1 5589 55488 55</p>
+                <p>Email: info@example.com</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-clock fa-icon"></i>
+                <h3>Opening Hours</h3>
+                <p>Mon-Sat: 11AM - 23PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="follow">
+                    <i class="fa-brands fa-twitter "></i>
+                    <i class="fa-brands fa-facebook "></i>
+                    <i class="fa-brands fa-instagram "></i>
+                    <i class="fa-brands fa-linkedin "></i>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer" >
+            <p>&copy; Copyright <span>Yummy.</span> All Rights Reserved</p>
+            <p>Designed by <span>Rishabh  Singh</span></p>
+        </div>
+
+        <a href="#home" class="download"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+
+
+</div>
+
+
+    <script src="https://kit.fontawesome.com/8bc00e6a4e.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        once:true,
+      });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/js/app.js"></script>
+
+
+    
+</body>
+</html>
